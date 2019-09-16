@@ -77,8 +77,21 @@ var words2 = [
 ];
 //Write a function averageWordLength that receives an array of words2 and calculate the average length of the words.
 
-for(var i = 0; i<words2.length;i++){
-  
+function averageWordLength(words2) {
+  var sum = 0;
+  var avr = 0;
+  for(let i in words2) {
+      count++;
+      sum += words2[i].length;
+      avr = sum / words2.length;
+  }
+  console.log(avr);
 }
+console.log(averageWordLength(words2));
+
+
+// for(var i = 0; i<words2.length;i++){
+
+// }
 
 
