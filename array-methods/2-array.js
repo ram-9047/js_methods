@@ -79,19 +79,22 @@ var words2 = [
 
 function averageWordLength(words2) {
   var sum = 0;
-  var avr = 0;
+  // var avr = 0;
   for(let i in words2) {
       count++;
       sum += words2[i].length;
-      avr = sum / words2.length;
+      
   }
-  console.log(avr);
+  return(sum / words2.length;);
 }
-console.log(averageWordLength(words2));
 
 
-// for(var i = 0; i<words2.length;i++){
-
-// }
-
-
+//2nd method
+function averageWordLength(words2){
+var sum = 0
+for(var i = 0; i<words2.length;i++){
+  sum += words2[i].length;
+}
+return(sum/words2.length)
+}
+averageWordLength(words2);
