@@ -8,8 +8,13 @@ var student = {
   sclass : "VI", 
   rollno : 12
 };
-
+console.log(student)
+delete student.rollno;
+console.log(student)
 
 
 
 // 3. Write a function to get the length of an object.
+function lengthObject(object){
+  return Object.keys(object).length
+}

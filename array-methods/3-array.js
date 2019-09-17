@@ -6,7 +6,7 @@ var words = [
   'bring',
   'sharp',
   'playground',
-  'poison',
+  'poison',                 
   'communion',
   'simple',
   'bring'
@@ -14,6 +14,15 @@ var words = [
 
 // Write a function uniqueArray that receives an array of words as a parameter. And remove the duplicates, and return a new array. 
 // (indexOf)
+function uniqueArray(array){
+    array.forEach((a,i,array) => {
+      if(i !== array.lastIndexOf(a){
+        array.splice(i, 1)
+      })
+      return(array)
+    });
+}
+////
 
 
 
@@ -29,7 +38,13 @@ var words2 = [
 ];
 
 // Write a function doesWordExist that will take in an array of words as one argument, and a word to search for as the other. Return true if it exists, otherwise, return false. Don't use indexOf for this one.
-
+// function duplicate(array){
+//   return array.reduce(acc , cv) =>{
+//     if(array.includes(cv)){
+//       return cv;
+//     }
+//   }
+// }
 
 
 
